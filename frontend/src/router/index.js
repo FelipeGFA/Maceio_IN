@@ -4,16 +4,12 @@ import Registrar from '../views/Registrar.vue'
 import Dashboard from '../views/Dashboard.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'login',
-    component: Login
-  },
 
   {
     path: '/login',
     name: 'login',
-    component: Login
+    component: Login,
+    alias: ['/', '']
   },
   {
     path: '/registrar',
