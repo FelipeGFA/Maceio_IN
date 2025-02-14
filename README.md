@@ -60,15 +60,16 @@ A aplicação permite:
 
  3.  **Configure o Frontend (Vue):**
 
-    *   **Navegue até a pasta do frontend:**
-        ```bash
+    
+   **Navegue até a pasta do frontend:**
+        
         cd ../frontend  # Ou a pasta correta do seu frontend
-        ```
+      
 
-    *   **Instale as dependências do frontend:**
-        ```bash
+   **Instale as dependências do frontend:**
+        
         npm install
-        ```
+        
 4.  **Inicie o Servidor de Desenvolvimento do Vue:**
     ```bash
     npm run serve
