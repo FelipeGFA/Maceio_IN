@@ -1,5 +1,3 @@
-# Projeto Vue.js e Django REST Framework - CRUD de Funcionários com Autenticação
-
 Este projeto é uma aplicação web completa que combina um frontend em Vue.js com um backend em Django REST Framework para implementar um sistema CRUD (Create, Read, Update, Delete) para gerenciar informações de funcionários, incluindo autenticação de usuários.
 
 ## Visão Geral
