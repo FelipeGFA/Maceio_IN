@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="form-container">
     <h2>Login</h2>
     <form @submit.prevent="login">
       <div>
@@ -39,9 +39,10 @@ export default {
         });
 
         const token = response.data.auth_token; 
-
+        console.log("Token recebido:", token);
         localStorage.setItem('token', token); 
-        axios.defaults.headers.common['Authorization'] = "Token " + token; 
+        console.log("Token antes de setar no header:", token);
+        axios.defaults.headers.common['Authorization'] = `Token ${token}`;
         this.$router.push('/dashboard'); 
 
       } catch (error) {

@@ -10,6 +10,70 @@ a {
     text-decoration: none;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center;  
+    min-height: 100vh;     
+    padding: 20px;        
+  }
+  
+  .form-container form {
+    width: 100%;         
+    max-width: 400px;    
+    padding: 20px;
+    border: 1px solid #ddd;  
+    border-radius: 5px;    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  }
+  
+  .form-container label {
+    display: block;       
+    margin-bottom: 5px; 
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="password"] {
+    width: 100%;          
+    padding: 10px;        
+    margin-bottom: 15px; 
+    border-radius: 4px;
+  }
+  
+  .form-container button[type="submit"] {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;             
+  }
+  
+  .form-container button[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+  .form-container p > a{
+    text-decoration: none;
+  
+  }
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+  main {
+    padding: 20px;
+    min-height: calc(100vh - 60px - 40px); /*Ajuste a altura do main*/
+  }
+
+
 .centralizar {
     display: flex;
     flex-direction: column;
@@ -53,6 +117,16 @@ button {
  
 }
 
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Isso é MUITO importante */
+  }
+  
+  .content-wrapper {
+    flex: 1; /* Isso faz o conteúdo principal crescer e ocupar o espaço disponível */
+  }
+  
 
 .header-top {
     background-color: #F58428; 
@@ -208,4 +282,3 @@ button {
     border-top: 1px solid #ccc;
     margin-top: auto; 
 }
-

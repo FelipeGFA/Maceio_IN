@@ -76,7 +76,7 @@ export default {
                     this.$emit('pessoaAtualizada'); 
                 } else {
                     
-                    await axios.post('http://127.0.0.1:8000/v1/api/pessoas/', this.pessoaLocal);
+                    await axios.post('http://127.0.0.1:8000/api/v1/pessoas/', this.pessoaLocal);
                     this.$emit('pessoaAdicionada'); 
                 }
                 

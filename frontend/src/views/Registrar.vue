@@ -1,4 +1,5 @@
 <template>
+  <div class="form-container">
     <h1>Registrar</h1>
     <form @submit.prevent="submitForm">
       <div>
@@ -26,6 +27,7 @@
         {{ errorMessage }}
       </div>
     </form>
+  </div>
   </template>
 
 <script>

@@ -1,15 +1,12 @@
 <template>
-    <div>
-        <h1>DASHBOARD</h1>
+    <div class="dashboard-container">
         <p v-if="!isAuthenticated">Você precisa estar Logado para ver esta página.</p>
         <div v-if="isAuthenticated">  
-            <button @click="logout" v-if="isLogado">DESLOGAR</button> 
-            <div>
-              <MainHeader />
+            <div class="content-wrapper">
+              <MainHeader /><button @click="logout" v-if="isLogado">DESLOGAR</button> 
               <PessoaList />
-              <PessoaForm />
-              <Footer />
             </div>
+          <Footer />    
         </div>
 
     </div>
@@ -22,15 +19,13 @@ import { useRouter } from 'vue-router';
 import axios from 'axios';
 import MainHeader from '../components/MainHeader.vue';
 import PessoaList from '../components/PessoaList.vue';
-import PessoaForm from '../components/PessoaForm.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Dashboard', 
   components: {
     MainHeader,
-    PessoaList,
-    PessoaForm,
+    PessoaList, 
     Footer,
   },
 
