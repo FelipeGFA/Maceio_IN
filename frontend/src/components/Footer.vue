@@ -7,7 +7,7 @@
   
   <script>
   export default {
-    name: 'AppFooter',
+    name: 'Footer',
     data() {
       return {
         anoAtual: new Date().getFullYear(),

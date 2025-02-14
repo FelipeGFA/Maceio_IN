@@ -72,11 +72,11 @@ export default {
             try {
                 if (this.atualizando) {
 
-                    await axios.put(`http://127.0.0.1:8000/api/pessoas/${this.pessoaLocal.id}/`, this.pessoaLocal);
+                    await axios.put(`http://127.0.0.1:8000/api/v1/pessoas/${this.pessoaLocal.id}/`, this.pessoaLocal);
                     this.$emit('pessoaAtualizada'); 
                 } else {
                     
-                    await axios.post('http://127.0.0.1:8000/api/pessoas/', this.pessoaLocal);
+                    await axios.post('http://127.0.0.1:8000/v1/api/pessoas/', this.pessoaLocal);
                     this.$emit('pessoaAdicionada'); 
                 }
                 

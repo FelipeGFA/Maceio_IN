@@ -8,7 +8,7 @@
               <MainHeader />
               <PessoaList />
               <PessoaForm />
-              <AppFooter />
+              <Footer />
             </div>
         </div>
 

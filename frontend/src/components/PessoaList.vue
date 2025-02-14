@@ -75,7 +75,7 @@ export default {
   methods: {
     async getPessoas() {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/pessoas/'); // Verifique se a URL está correta
+        const response = await axios.get('http://127.0.0.1:8000/api/v1/pessoas/'); // Verifique se a URL está correta
         console.log('Dados recebidos:', response.data); // Log para verificar os dados
         this.pessoas = response.data;
       } catch (error) {
@@ -105,7 +105,7 @@ export default {
     async excluirPessoa() {
       if (!this.pessoaParaExcluir) return;
       try {
-        await axios.delete(`http://127.0.0.1:8000/api/pessoas/${this.pessoaParaExcluir.id}/`); // Verifique a URL
+        await axios.delete(`http://127.0.0.1:8000/api/v1/pessoas/${this.pessoaParaExcluir.id}/`); // Verifique a URL
         this.getPessoas();
         this.pessoaParaExcluir = null;
       } catch (error) {
