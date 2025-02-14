@@ -10,6 +10,85 @@ a {
     text-decoration: none;
 }
 
+.sfaz-section {
+  background-color: #f8f9fa; 
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+.sfaz-container{
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+.sfaz-title {
+    text-align: center;
+  color: #0D2F53;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.sfaz-intro {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.sfaz-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.sfaz-list li {
+  margin-bottom: 10px;
+  display: flex; 
+  align-items: flex-start; 
+}
+
+.list-icon {
+  margin-right: 10px;
+  color: #0D2F53; 
+  font-size: 1.2em; 
+}
+
+.sfaz-conclusion {
+  line-height: 1.6;
+  font-style: italic;
+}
+
+
+.list-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+.list-title {
+  color: #0D2F53;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.add-button {
+  background-color: #007bff;  
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0056b3;  
+}
 .form-container {
     display: flex;
     flex-direction: column; 
@@ -70,7 +149,7 @@ a {
 
   main {
     padding: 20px;
-    min-height: calc(100vh - 60px - 40px); /*Ajuste a altura do main*/
+    min-height: calc(100vh - 60px - 40px); 
   }
 
 
@@ -120,11 +199,11 @@ button {
 .dashboard-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Isso é MUITO importante */
+    min-height: 100vh; 
   }
   
   .content-wrapper {
-    flex: 1; /* Isso faz o conteúdo principal crescer e ocupar o espaço disponível */
+    flex: 1; 
   }
   
 

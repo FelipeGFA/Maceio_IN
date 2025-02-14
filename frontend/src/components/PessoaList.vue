@@ -75,12 +75,12 @@ export default {
   methods: {
     async getPessoas() {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/v1/pessoas/'); // Verifique se a URL está correta
-        console.log('Dados recebidos:', response.data); // Log para verificar os dados
+        const response = await axios.get('http://127.0.0.1:8000/api/v1/pessoas/'); 
+        console.log('Dados recebidos:', response.data); 
         this.pessoas = response.data;
       } catch (error) {
         console.error('Erro ao obter pessoas:', error);
-        // Se houver um erro, exiba uma mensagem para o usuário.
+        
       }
     },
     alternarFormularioAdicao() {
@@ -105,7 +105,7 @@ export default {
     async excluirPessoa() {
       if (!this.pessoaParaExcluir) return;
       try {
-        await axios.delete(`http://127.0.0.1:8000/api/v1/pessoas/${this.pessoaParaExcluir.id}/`); // Verifique a URL
+        await axios.delete(`http://127.0.0.1:8000/api/v1/pessoas/${this.pessoaParaExcluir.id}/`); 
         this.getPessoas();
         this.pessoaParaExcluir = null;
       } catch (error) {
@@ -115,3 +115,103 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabela th,
+.tabela td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela th {
+  background-color: #f2f2f2;
+}
+
+
+.tabela button {
+  background-color: #0D2F53; 
+    color: white;
+    padding: 6px 10px;  
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.tabela button:hover {
+  background-color: #154773;  
+}
+
+.tabela button:active {
+     background-color: #0a2342; 
+    transform: translateY(1px);
+}
+
+.tabela button:last-child { 
+  background-color: #c0392b; 
+}
+
+.tabela button:last-child:hover {
+  background-color: #a93226; 
+}
+
+
+.add-button {
+    background-color: #27ae60; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+.add-button:hover {
+  background-color: #1e8449; 
+}
+.add-button:active {
+  background-color: #145a32;
+  transform: translateY(1px);
+}
+
+
+
+div[v-if="pessoaParaExcluir"] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2000; 
+}
+
+div[v-if="pessoaParaExcluir"] button {
+   background-color: #0D2F53; /* Azul */
+    color: white;
+    padding: 6px 10px;  
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px; 
+    transition: background-color 0.3s ease;
+}
+div[v-if="pessoaParaExcluir"] button:hover{
+  background-color: #154773;  
+}
+</style>

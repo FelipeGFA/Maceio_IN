@@ -97,3 +97,98 @@ export default {
 };
 </script>
 
+<style scoped>
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+form {
+    width: 80%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+div {
+  margin-bottom: 10px; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+button {
+  background-color: #0D2F53;  
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  margin-right: 10px; 
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #154773; 
+}
+
+button:active {
+  background-color: #0a2342; 
+  transform: translateY(1px); 
+}
+button[type="button"] {
+    background-color: #ccc; 
+    color: #333;
+}
+
+button[type="button"]:hover {
+    background-color: #bbb; 
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 80%; 
+  max-width: 500px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+</style>
