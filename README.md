@@ -1,5 +1,3 @@
-# Projeto Vue.js - CRUD de Funcionários com Autenticação
-
 Este projeto é uma aplicação web construída com Vue.js que implementa as operações CRUD (Create, Read, Update, Delete) para gerenciar informações de funcionários, juntamente com um sistema de autenticação de usuários.
 
 ## Visão Geral
