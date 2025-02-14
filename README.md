@@ -33,38 +33,6 @@ A aplicação permite:
     *   **Django REST Framework (DRF):** Framework Python robusto para criar APIs RESTful. (Essa é uma forte suposição baseada no tratamento de erros, mas pode ser qualquer backend que forneça uma API similar).
     *   **API RESTful:** O backend expõe uma API RESTful para que o frontend possa interagir com os dados (usuários e funcionários).
 
-## Estrutura do Projeto
-
-O projeto está organizado da seguinte forma (estrutura *típica* de um projeto Vue CLI, mas pode variar ligeiramente):
-
-meu-projeto-vue/
-├── public/             # Arquivos estáticos (index.html, favicon, etc.)
-│   └── index.html
-├── src/
-│   ├── api/          # Lógica de interação com a API (opcional, mas recomendado)
-│   │   └── index.js    # Configuração do Axios e funções para chamadas à API
-│   ├── assets/         # Imagens, fontes, etc.
-│   │   ├── images/
-│   │   └── logo.png
-│   ├── components/     # Componentes reutilizáveis
-│   │   ├── Footer.vue
-│   │   ├── MainHeader.vue
-│   ├── PessoaForm.vue
-│   ├── PessoaList.vue
-│   ├── router/        # Configuração das rotas
-│   │   └── index.js
-│   ├── views/          # Componentes de página (rotas)
-│   │   ├── Dashboard.vue
-│   │   ├── Login.vue
-│   │   └── Registrar.vue
-│  ├── App.vue
-│   ├── main.js        # Ponto de entrada da aplicação
-│   └── style.css     # Estilos Globais
-├── .env              # Variáveis de Ambiente (se houver, ex: URL da API)
-├── package.json      # Dependências e scripts do projeto
-├── vue.config.js     # Configuração do Vue CLI (se houver)
-└── README.md         # Este arquivo
-
 
 ## Pré-requisitos
 
