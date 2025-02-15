@@ -68,7 +68,7 @@ A aplicação permite:
 
    **Instale as dependências do frontend:**
         
-        npm install
+        npm install vue axios 
         
 4.  **Inicie o Servidor de Desenvolvimento do Vue:**
     ```bash
